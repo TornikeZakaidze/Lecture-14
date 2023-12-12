@@ -1,0 +1,118 @@
+.container {
+    @extend %myContainer;
+    @include flexContainer(space-between);
+}
+.header-Rec {
+    height: 84px;
+    width: 100%;
+    @include flexContainer(space-evenly);
+    justify-content: center;
+    align-items: center;
+    img {
+        margin: 0 20px 0 20px;
+        width: 33px;
+        height: 42px;
+    }
+    .nav-Bar {
+        display: flex;
+        width: 452px;
+        justify-content: space-between;
+        margin: 0 20px 0 20px;
+        align-items: center;
+        a {
+            @include style1;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            display: none
+        }
+    }
+}
+.big-Banner {
+    background-image: url("../img/bigImage.jpg");
+    height: 606px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexContainer;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 84px;
+    h1 {
+        font-family: Helvetica;
+        font-size: 79px;
+        font-weight: 700;
+        line-height: 91px;
+        letter-spacing: 0em;
+        color: $color2;
+        padding-bottom: 31px;
+    }
+    h4 {
+        font-family: Helvetica;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: $color2;
+
+    }
+}
+.banners {
+    display: flex;
+    justify-content: flex-start;
+    .discover {
+        max-width: 235px;
+        max-height: 213px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: -530px;
+        margin: 0 20px 0 20px;
+        h4 {
+            font-family: Helvetica;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            color: $color1;
+            margin-bottom: 9px;
+        }
+        h3 {
+            font-family: Helvetica;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            color: $color3;
+            margin-bottom: 37px;
+        }
+    }
+    .small-Banners {
+        max-width: 924px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .banner1 {
+            max-width: 286px;
+            margin: 0 5px 0 5px;
+            margin-bottom: 56px;
+            h3 {
+                font-family: Helvetica;
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                color: $color4;
+                margin: 23px 0 9px 0;
+            }
+            h4 {
+                font-family: Helvetica;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                color: $color1;
+            }
+        }
+    }
+}

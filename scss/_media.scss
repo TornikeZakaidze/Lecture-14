@@ -1,0 +1,20 @@
+@media only screen and (max-width: 500px) {
+    .nav-Bar {      
+        a {
+            display: none;
+        }
+        img {
+            display: block;
+        }
+
+    }
+    .banners {
+        flex-wrap: wrap;
+        width: 286px;
+        margin: 0 auto;
+
+        .discover {
+            margin-bottom: 30px;
+        }
+    }
+  }

@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1242px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: space-between;
+  flex-direction: row;
+}
+
+.header-Rec {
+  height: 84px;
+  width: 100%;
+  display: flex;
+  align-items: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-Rec img {
+  margin: 0 20px 0 20px;
+  width: 33px;
+  height: 42px;
+}
+.header-Rec .nav-Bar {
+  display: flex;
+  width: 452px;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  align-items: center;
+}
+.header-Rec .nav-Bar a {
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.header-Rec .nav-Bar img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.big-Banner {
+  background-image: url("../img/bigImage.jpg");
+  height: 606px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 84px;
+}
+.big-Banner h1 {
+  font-family: Helvetica;
+  font-size: 79px;
+  font-weight: 700;
+  line-height: 91px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+  padding-bottom: 31px;
+}
+.big-Banner h4 {
+  font-family: Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+}
+
+.banners {
+  display: flex;
+  justify-content: flex-start;
+}
+.banners .discover {
+  max-width: 235px;
+  max-height: 213px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: -530px;
+  margin: 0 20px 0 20px;
+}
+.banners .discover h4 {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #636060;
+  margin-bottom: 9px;
+}
+.banners .discover h3 {
+  font-family: Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #010101;
+  margin-bottom: 37px;
+}
+.banners .small-Banners {
+  max-width: 924px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.banners .small-Banners .banner1 {
+  max-width: 286px;
+  margin: 0 5px 0 5px;
+  margin-bottom: 56px;
+}
+.banners .small-Banners .banner1 h3 {
+  font-family: Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #343232;
+  margin: 23px 0 9px 0;
+}
+.banners .small-Banners .banner1 h4 {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #636060;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-Bar a {
+    display: none;
+  }
+  .nav-Bar img {
+    display: block;
+  }
+  .banners {
+    flex-wrap: wrap;
+    width: 286px;
+    margin: 0 auto;
+  }
+  .banners .discover {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=global.css.map */
