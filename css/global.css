@@ -96,25 +96,30 @@ a {
   line-height: 20px;
   letter-spacing: 0em;
 }
-.header-Rec .nav-Bar img {
-  width: 30px;
-  height: 30px;
+.header-Rec .burger-Menu {
   display: none;
 }
 
 .big-Banner {
-  background-image: url("../img/bigImage.jpg");
-  height: 606px;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 84px;
+  position: relative;
 }
-.big-Banner h1 {
+.big-Banner img {
+  width: 100%;
+}
+.big-Banner .big-Banner-Text {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.big-Banner .big-Banner-Text h1 {
   font-family: Helvetica;
   font-size: 79px;
   font-weight: 700;
@@ -123,7 +128,7 @@ a {
   color: #FFFFFF;
   padding-bottom: 31px;
 }
-.big-Banner h4 {
+.big-Banner .big-Banner-Text h4 {
   font-family: Helvetica;
   font-size: 19px;
   font-weight: 400;
@@ -192,11 +197,14 @@ a {
   color: #636060;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 630px) {
+  .nav-Bar {
+    display: none;
+  }
   .nav-Bar a {
     display: none;
   }
-  .nav-Bar img {
+  .burger-Menu {
     display: block;
   }
   .banners {
@@ -206,5 +214,20 @@ a {
   }
   .banners .discover {
     margin-bottom: 30px;
+  }
+  .big-Banner .big-Banner-Text h1 {
+    font-size: 55px;
+  }
+  .big-Banner .big-Banner-Text h4 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .big-Banner .big-Banner-Text h1 {
+    margin-bottom: -50px;
+    font-size: 30px;
+  }
+  .big-Banner .big-Banner-Text h4 {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=global.css.map */

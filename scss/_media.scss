@@ -1,12 +1,12 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 630px) {
     .nav-Bar {      
+        display: none; 
         a {
             display: none;
         }
-        img {
-            display: block;
-        }
-
+    }
+    .burger-Menu {
+        display: block;
     }
     .banners {
         flex-wrap: wrap;
@@ -17,4 +17,28 @@
             margin-bottom: 30px;
         }
     }
+    .big-Banner {
+        .big-Banner-Text {
+            h1 {
+                font-size: 55px;
+            }
+            h4 {
+                font-size: 13px;
+            }
+        }
+    }
   }
+  @media only screen and (max-width: 440px) {
+    .big-Banner {
+        .big-Banner-Text {
+            h1 {
+                margin-bottom: -50px;
+                font-size: 30px;
+            }
+            h4 {
+                font-size: 13px;
+            }
+        }
+    }
+
+   }
